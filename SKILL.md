@@ -7,6 +7,8 @@ description: >
   patterns. Use when the user asks to "QA this skill", "review my skill",
   "check my skill", "audit this skill", "validate my SKILL.md", "skill quality
   check", or any request to evaluate or improve a skill against best practices.
+  Do NOT trigger for general code reviews, PR reviews, or linting — only for
+  Claude skill evaluation.
 ---
 
 # Skill QA
