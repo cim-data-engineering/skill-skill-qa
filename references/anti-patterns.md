@@ -16,7 +16,7 @@ Common mistakes in skill authoring. Use this as a quick reference when reviewing
 
 | Anti-Pattern | Why It's Bad | Fix |
 |---|---|---|
-| README.md inside skill folder | Conflicts with SKILL.md as the single entry point; may confuse Claude's file loading | Move README.md to the repo root, outside the skill directory |
+| README.md duplicating SKILL.md content | Claude may load conflicting instructions from both files | Keep README.md for human-facing install/usage docs only; all skill logic belongs in SKILL.md |
 | Deeply nested references (A → B → C) | Claude may only partially read files discovered through chained references | Flatten: SKILL.md links directly to each reference file |
 | Vague folder/file names (`helpers/`, `utils.md`, `tools/`) | Hard to understand purpose from the name alone | Use descriptive names (`validation-rules.md`, `api-client.py`) |
 | Windows-style paths (`scripts\helper.py`) | Breaks on macOS/Linux; inconsistent cross-platform behavior | Use forward slashes everywhere (`scripts/helper.py`) |

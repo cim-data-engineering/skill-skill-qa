@@ -76,7 +76,7 @@ Use this checklist to evaluate a skill systematically. Each check has an ID for 
 |----|-------|------|------|
 | S1 | Folder name is kebab-case | Lowercase letters, numbers, hyphens only | Spaces, underscores, capitals, or special characters |
 | S2 | SKILL.md exact filename | File is named exactly `SKILL.md` (case-sensitive) | Any variation (skill.md, SKILL.MD, Skill.md) |
-| S3 | No README.md inside skill folder | README.md absent from the skill directory | README.md present inside the skill folder |
+| S3 | README.md appropriate use | README.md absent or used only for installation/usage instructions | README.md duplicates SKILL.md content or contains skill logic that belongs in SKILL.md |
 | S4 | Forward slashes in paths | All file path references use `/` | Backslashes (`\`) in any path reference |
 | S5 | Conventional subdirectories | Uses `references/`, `scripts/`, `assets/` as appropriate | Non-standard directory names (docs/, lib/, helpers/) |
 | S6 | Descriptive filenames | File names indicate content (e.g., `api-patterns.md`) | Vague names (doc1.md, file2.py, utils.md) |
@@ -132,7 +132,7 @@ A condensed pass for rapid validation before upload:
 **Structure:**
 - [ ] Folder is kebab-case
 - [ ] SKILL.md exists (exact case)
-- [ ] No README.md inside skill folder
+- [ ] README.md (if present) is for human install/usage docs only, not skill logic
 - [ ] YAML frontmatter has `---` delimiters
 
 **Frontmatter:**

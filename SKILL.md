@@ -65,7 +65,8 @@ List all files in the skill directory and categorize them:
 - **references/** — list all files and their line counts
 - **scripts/** — list all files
 - **assets/** — list all files
-- **Other files** — flag anything unexpected (especially README.md inside the skill folder)
+- **Other files** — flag anything unexpected
+- **README.md** — acceptable for installation/usage instructions aimed at humans
 
 Record the total file count and SKILL.md line count for the report header.
 
@@ -120,7 +121,7 @@ Validate conventions (checks S1–S6):
 
 - Folder name is kebab-case
 - File is named exactly `SKILL.md`
-- No `README.md` inside the skill folder
+- `README.md` is allowed for installation/usage instructions (not loaded by Claude as skill content)
 - All file path references use **forward slashes**
 - Subdirectories follow convention (`references/`, `scripts/`, `assets/`)
 - Filenames are descriptive (not `doc1.md` or `utils.py`)
